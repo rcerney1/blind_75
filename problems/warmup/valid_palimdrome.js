@@ -15,5 +15,5 @@ class Solution{
 
 const sol = new Solution();
 
-console.log(sol.isPalindrome("racecar")) // should return true
-console.log(sol.isPalindrome("racecar, not a palindrome")) // should return false
+console.log(sol.isPalindrome("racecar@@@@")) // should return true
+console.log(sol.isPalindrome("not a palindrome")) // should return false
