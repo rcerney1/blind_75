@@ -10,7 +10,6 @@
 class Solution {
     // Function to check if given sentence is pangram
     checkIfPangram(sentence) {
-      // TODO: Write your code here
       const seen = new Set();
       
       for (let i = 0; i < sentence.length; i++) {
