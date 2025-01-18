@@ -25,4 +25,5 @@ class Solution {
 
 const sol = new Solution();
 
+console.log(sol)
 console.log(sol.twoSum([3,4,5,6], 7))
