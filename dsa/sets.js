@@ -74,9 +74,10 @@ let setA = new mySet();
 let setB = new mySet();
 
 setA.add('a')
+setA.add('a')
 setB.add('b')
 setB.add('c')
 setB.add('a')
 setB.add('d')
 console.log(setA.subset(setB))
-console.log(setA.values(), setB.values())
+console.log(setA.values(), setB.values(), setB.has('e'))
