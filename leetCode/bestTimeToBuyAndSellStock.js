@@ -3,9 +3,8 @@ const buySellBest = (prices) => {
     let currMax = 0;
 
     for(let i = 0; i < prices.length; i++){
-        currMin = Math.min( currMin, prices[i]);
+        currMin = Math.min(currMin, prices[i]);
         currMax = Math.max(currMax, prices[i] - currMin)
-
     }
 
     return currMax;
