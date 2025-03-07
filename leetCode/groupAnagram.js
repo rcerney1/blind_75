@@ -5,14 +5,14 @@ const groupAnagrams = (strs) => {
 
     let map = {};
 
-    for (let i = 0; i < sorted.length; i++){
+    for (let i in sorted){
         if(!map[sorted[i]]) {
             map[sorted[i]] = [strs[i]];
         } else {
             map[sorted[i]].push(strs[i]);
         }
     }
-
+    
     return Object.values(map)
 }
 
