@@ -19,3 +19,4 @@ const productExceptSelf = (nums) => {
 }
 
 console.log(productExceptSelf([1,2,3,4]))
+console.log(productExceptSelf([1,2,3,4,5,6,3,1,2,2]))
