@@ -55,4 +55,20 @@ let Stack = function() {
     this.size = function(){
         return this.count;
     }
+
+    //returns value at end of stack
+    this.peek = function() {
+        return this.storage[this.count - 1]
+    }
 }
+
+let test = new Stack;
+
+test.push(2);
+test.push(5)
+
+let size = test.size();
+let last = test.peek();
+
+console.log(size, last)
+
