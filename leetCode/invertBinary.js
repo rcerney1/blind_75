@@ -1,25 +1,9 @@
-/**
- * Definition for a binary tree node.
- * function TreeNode(val, left = null, right = null) {
- *     this.val = val;
- *     this.left = left;
- *     this.right = right;
- * }
- */
 
 /**
  * @param {TreeNode} root
  * @return {TreeNode}
  */
 var invertTree = function(root) {
-    // 0. Intuition: Use recursion to swap left and right nodes
-    // 1. Base case: return null if node is null
-    // 2. Recursively invert left and right subtrees
-    // 3. Swap them
-
-    // Time O(n)
-    // Space O(n)
-
     if (!root) return null;
 
     const left = invertTree(root.left);
