@@ -1,11 +1,3 @@
-/**
- * Definition for a binary tree node.
- * function TreeNode(val, left = null, right = null) {
- *     this.val = val;
- *     this.left = left;
- *     this.right = right;
- * }
- */
 
 /**
  * @param {TreeNode} root
@@ -13,14 +5,7 @@
  * @return {boolean}
  */
 var hasPathSum = function(root, targetSum) {
-    // 0. Intuition: Traverse tree and subtract node values from targetSum
-    // 1. Base case: null node => return false
-    // 2. If leaf node and value equals targetSum => return true
-    // 3. Recurse left and right with updated targetSum
-
-    // Time O(n)
-    // Space O(n)
-
+    
     if (!root) return false;
 
     if (!root.left && !root.right && root.val === targetSum) {
