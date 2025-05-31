@@ -1,24 +1,9 @@
-/**
- * Definition for a binary tree node.
- * function TreeNode(val, left = null, right = null) {
- *     this.val = val;
- *     this.left = left;
- *     this.right = right;
- * }
- */
 
 /**
  * @param {TreeNode} root
  * @return {void} Do not return anything, modify root in-place instead.
  */
 var flatten = function(root) {
-    // 0. Intuition: Reverse post-order traversal (right -> left -> root)
-    // 1. Keep a prev pointer and rewire right pointers during traversal
-    // 2. Set left pointers to null
-
-    // Time O(n)
-    // Space O(n) due to recursion stack
-
     let prev = null;
 
     const dfs = (node) => {
