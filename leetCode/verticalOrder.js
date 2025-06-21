@@ -1,24 +1,9 @@
-/**
- * Definition for a binary tree node.
- * function TreeNode(val, left = null, right = null) {
- *     this.val = val;
- *     this.left = left;
- *     this.right = right;
- * }
- */
 
 /**
  * @param {TreeNode} root
  * @return {number[][]}
  */
 var verticalTraversal = function(root) {
-    // 0. Intuition: Use BFS with x, y coordinates
-    // 1. Group nodes by column (x), then sort by row (y) and value
-    // 2. Return sorted verticals
-
-    // Time O(n log n) due to sorting
-    // Space O(n)
-
     const nodeList = [];
 
     const dfs = (node, row, col) => {
